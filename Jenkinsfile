@@ -35,7 +35,7 @@ stage('Deploy') {
 
 }
        steps { 
-       sh "wget http://http://varmasushil5.mylabserver.com/rectangle/all/rectangle_${env.BUILD_NUMBER}.jar"
+       sh "wget http://varmasushil5.mylabserver.com/rectangle/all/rectangle_${env.BUILD_NUMBER}.jar"
        sh "java -jar rectangle_${env.BUILD_NUMBER}.jar 3 4"
       
 
